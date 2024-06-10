@@ -1,43 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <title>ChatBot_Demo</title>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-  </style>
-  </head>
-  <body>
-    <div class="main">
-      <div class="chat_log">
-        <ul id="messages">
-        </ul>
-      </div>
-      <div class="chat_input">
-        <form id="form" class="chat_input_form">
-          <input type="text" id="input" class="main_input" placeholder="Escribe un mensaje" />
-          <button class="send_button">Enviar</button>
-        </form>
-      </div>
-    </div>
+<html class="bg-gray-100 h-full">
+<head>
+<title>🤖 DEMO</title>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+</head>
 
-    <script src="main.js" type="module"></script>
-  </body>
-  
-  <style>
-    body{
-      background-image: linear-gradient(#00173e, #000d23);
-      width: 100%;
-      height: 100dvh;
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-      align-items: center;
-      background: #00173e;
-    }
-    
-  </style>
+<body class="h-full">
+    <div class="h-full w-[640px] mx-auto">
+        <div class="h-full" id="container"></div>
+    </div>
+    <script src="https://unpkg.com/mithril/mithril.js"></script>
+    <script src="main.js"></script>
+</body>
 
 </html>
