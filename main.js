@@ -32,7 +32,7 @@ const humanMessage = {
         return m("div", { "class": "flex justify-end"} , [
             m(
                 "span",
-                { "class": "py-2 px-3 text-gray-950 whitespace-pre-line bg-green-100 rounded-md shadow max-w-[640px]"},
+                { "class": "py-2 px-3 text-gray-950 whitespace-pre-line bg-green-100 rounded-md shadow max-w-[640px] max-h-[70%] mb-[90px] overflow-scroll"},
                 vnode.attrs.chat.content)
         ])    
     }
@@ -43,7 +43,7 @@ const aiMessage = {
         return m("div", { "class": "flex justify-start" }, [
             m(
                 "span",
-                { "class": "py-2 px-3 bg-white text-gray-950 whitespace-pre-line rounded-md shadow max-w-[640px]"},
+                { "class": "py-2 px-3 bg-white text-gray-950 whitespace-pre-line rounded-md shadow max-w-[640px] max-h-[70%] mb-[90px] overflow-scroll"},
                 vnode.attrs.chat.content)
         ])    
     }
